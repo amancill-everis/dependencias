@@ -1,5 +1,6 @@
 dependencies {
-	compile (group: 'javax.activation', name: 'activation', version: '1.1') { transitive = false }
-	compile (group: 'org.aspectj', name: 'aspectjrt', version: '1.6.2') { transitive = false }
-	compile (group: 'org.aspectj', name: 'aspectjweaver', version: '1.6.2') { transitive = false }
+	implementation 'org.springframework:spring-beans'
+	implementation 'org.springframework:spring-context'
+	implementation 'org.springframework:spring-web'
+	implementation 'org.springframework:spring-webflux'
 }
