@@ -1,3 +1,9 @@
+ext {
+    grupoCore = "com.tdp.genesis.core"
+    versionCore = '1.2.0-SNAPSHOT'
+    grupoStarter = 'com.tdp.genesis.core'
+    versionStarter = '1.2.0-SNAPSHOT'
+}
 dependencies {
 	implementation 'org.springframework:spring-beans'
 	implementation 'org.springframework:spring-context'
