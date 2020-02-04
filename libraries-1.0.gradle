@@ -1,0 +1,72 @@
+ext {
+
+
+    // Genesis Framework
+    genesisFrameworkVersion         = "1.2.0-SNAPSHOT"
+    // Spring Frameworks
+    springVersion  = "5.2.1.RELEASE"
+    springBootVersion = "2.2.1.RELEASE"
+    springCloudVersion = "Hoxton.RC1"
+    // Apache Libraries Versions
+    commonsLangVersion = "3.9"
+    // Reactive
+    resilience4jVersion = "1.1.0"
+    // Other Libraries Versions
+    findbugsAnnotationsVersion="3.0.1"
+    lombokVersion="1.18.10"
+    springfoxVersion="2.9.0-SNAPSHOT"
+    commonsLang3Version="3.8.1"
+    swaggerAnnotationsVersion="1.5.24"
+    validationApiVersion="2.0.1.Final"
+    slf4jApiVersion="1.7.29"
+    jakartaJwsApiVersion="1.1.1"
+    jakartaXmlBindApiVersion="2.3.2"
+    kotlinStdlibVersion="1.3.50"
+    okhttp3Version="4.2.2"
+
+    framework = [
+            genesisCore: "com.tdp.genesis.core:genesis-core:${genesisFrameworkVersion}",
+            genesisStartetWeb: "com.tdp.genesis.starter.web:genesis-starter-web:${genesisFrameworkVersion}",
+            genesisSupport: "com.tdp.genesis.core.support:genesis-support:${genesisFrameworkVersion}"
+    ]
+    spring = [
+            web: "org.springframework:spring-web:${springVersion}",
+            beans: "org.springframework:spring-beans:${springVersion}",
+            context: "org.springframework:spring-context:${springVersion}",
+            webflux: "org.springframework:spring-webflux:${springVersion}"
+    ]
+    springboot = [
+            autoconfigure: "org.springframework.boot:spring-boot-autoconfigure:${springBootVersion}",
+            boot: "org.springframework.boot:spring-boot:${springBootVersion}",
+            starter: "org.springframework.boot:spring-boot-starter:${springBootVersion}",
+            validation: "org.springframework.boot:spring-boot-starter-validation:${springBootVersion}",
+            webflux: "org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}"
+    ]
+    okhttp3 = [
+            okhttp: "com.squareup.okhttp3:okhttp:${okhttp3Version}",
+            logging: "com.squareup.okhttp3:logging-interceptor:${okhttp3Version}"
+    ]
+
+    springfox = [
+            webflux: "io.springfox:springfox-spring-webflux:${springfoxVersion}",
+            swagger2: "io.springfox:springfox-swagger2:${springfoxVersion}",
+            ui: "io.springfox:springfox-swagger-ui:${springfoxVersion}"
+    ]
+
+    terceros = [
+            resilience4jcircuitbreaker: "io.github.resilience4j:resilience4j-circuitbreaker:${resilience4jVersion}",
+            commonslang3: "org.apache.commons:commons-lang3:${commonsLang3Version}",
+            validationapi: "javax.validation:validation-api:${validationApiVersion}",
+            jakartavalidationapi: 'jakarta.validation:jakarta.validation-api:2.0.1',
+            slf4japi: "org.slf4j:slf4j-api:${slf4jApiVersion}",
+            jwsapi: "jakarta.jws:jakarta.jws-api:${jakartaJwsApiVersion}",
+            bindapi: "jakarta.xml.bind:jakarta.xml.bind-api:${jakartaXmlBindApiVersion}",
+            kotlinstdlib: "org.jetbrains.kotlin:kotlin-stdlib:${kotlinStdlibVersion}",
+            reactorcore: 'io.projectreactor:reactor-core:3.3.0.RELEASE'
+    ]
+
+    swagger = [
+            annotations: "io.swagger:swagger-annotations:${swaggerAnnotationsVersion}"
+    ]
+
+}
